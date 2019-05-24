@@ -1,0 +1,22 @@
+version: "3"
+services:    
+    my-angular-app:
+        image: my-angular-app
+        ports:
+            - "81:80"
+    myapp:
+        image: myapp
+        ports:
+            - 3000:3000
+        
+    load-balancer:
+        image: load-balancer
+        ports:            
+            - "80:80"           
+        depends_on: 
+            - my-angular-app
+            - myapp
+# volumes:
+#     db_data:
+#     web_data:
+#     pg_data:
