@@ -13,7 +13,8 @@ export class HeroesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get('/app').subscribe(data => {
+    window.alert('you are a hero')
+    this.http.get('/application/mohit').subscribe(data => {
       console.log(data);
       alert(data);
     }, error => {
