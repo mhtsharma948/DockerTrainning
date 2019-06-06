@@ -48,4 +48,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## References
 
+* [Docker](https://docs.docker.com/get-started/)
+* [Nginx](https://www.nginx.com/)
 * 
