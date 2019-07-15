@@ -6,6 +6,8 @@ services:
             - "81:80"
     myapp:
         image: myapp
+        volumes:
+            - "D:/DockerTrainning/data:/usr/src/app/data"
         ports:
             - 3000:3000
         
