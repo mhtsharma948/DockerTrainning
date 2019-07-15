@@ -1,4 +1,5 @@
 FROM node:10.7-alpine
+# FROM mhtsharma/myapp
 
 WORKDIR /usr/src/app
 COPY ./ ./
